@@ -30,6 +30,7 @@
   padding: 0;
    font-family: "Open Sans", sans-serif;
    font-weight: 400;
+   box-sizing: border-box;
 }
 
 body {
@@ -103,7 +104,6 @@ header {
 .Img-s {
   width: 300px;
   height: 400px;
-  box-sizing: border-box;
   outline-offset: -10px;
 }
 
@@ -127,7 +127,6 @@ header {
 }
 
 /*Index flex box*/
-
 /*Inhold Con */
 
 .Inhold {
@@ -155,7 +154,7 @@ overflow: auto;
 }
 
 
-/*Bean page*/
+/*Plantpages*/
 
 .flexPlantPages {
   display: flex;
@@ -165,7 +164,6 @@ overflow: auto;
   display: flex;
   margin-top: 15px;
   float: right;
-  box-sizing: border-box;
   height: auto;
   width: 45%;
   font-size: medium;
@@ -173,7 +171,6 @@ overflow: auto;
 .plantFlexImg {
   display: flex;
   float: left;
-  box-sizing: border-box;
   height: auto;
   width: 45%;
 }
@@ -184,3 +181,4 @@ overflow: auto;
   text-decoration: underline;
   margin-bottom: 5px;
 }
+
