@@ -13,10 +13,19 @@
   font-style: normal;
 }
 
+/*Colour variables*/
 
 :root {
   --body-colour: darkslategray;
+  --main-darkgreen-colour: darkgreen;
+  --dropdown-hover: gray;
 }
+
+
+
+
+
+/*Title*/
 
 .Title {
   font-family: "Patrick Hand", cursive;
@@ -25,6 +34,8 @@
   line-height: 4rem;
   margin-top: 25px;
 }
+
+/*global styles*/
 
 * {
   margin: 0;
@@ -40,7 +51,7 @@ body {
 }
 
 .h1/h2 {
-  color: darkgreen;
+  color: var(--main-darkgreen-colour);
   text-shadow: -2px;
   filter: blur(radius) 2px silver;
 }
@@ -54,13 +65,13 @@ h2 {
 }
 
 footer{
-  background-color: darkgreen;
+  background-color: var(--main-darkgreen-colour);
   height: 30px;
 }
 
 /*Nav bar Dont touch it*/
 .Nav-div {
-  background-color: darkgreen;
+  background-color: var(--main-darkgreen-colour);
   height: 30px;
   position: fixed;
   top: 0;
@@ -83,11 +94,12 @@ nav ul li a {
 
 /*Nav bar hover*/
 .dropdown-content a:hover {
-  background-color: gray;
+  background-color:  var(--dropdown-hover);
+
 }
 
 .dropbtn:hover {
-  background-color: gray;
+  background-color: var(--dropdown-hover);
 }
 
 /*Dropdown Nav*/
@@ -117,7 +129,7 @@ nav ul li a {
 }
 
 .dropbtn {
-  background-color: darkgreen;
+  background-color: var(--main-darkgreen-colour);
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -144,7 +156,7 @@ nav ul li {
 /*Footer & Header possibly no change needed*/
 
 footer {
-  background-color: darkgreen;
+  background-color: var(--main-darkgreen-colour);
   max-height: 30px;
 }
 
