@@ -19,34 +19,45 @@
 }
 
 .Title {
-   font-family: "Patrick Hand", cursive;
+  font-family: "Patrick Hand", cursive;
   font-weight: 700;
   font-style: normal;
   line-height: 4rem;
+  margin-top: 25px;
 }
 
 * {
   margin: 0;
   padding: 0;
-   font-family: "Open Sans", sans-serif;
-   font-weight: 400;
-   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
 }
 
 body {
   color: var(--body-colour);
+  width: 1000px;
 }
+
 .h1/h2 {
- color: darkgreen;
+  color: darkgreen;
   text-shadow: -2px;
   filter: blur(radius) 2px silver;
 }
+
 h1 {
   font-size: 3rem;
 }
+
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
+
+footer{
+  background-color: darkgreen;
+  height: 30px;
+}
+
 /*Nav bar Dont touch it*/
 .Nav-div {
   background-color: darkgreen;
@@ -54,29 +65,76 @@ h2 {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 14px 20px;
   text-align: center;
-  overflow: auto;
+  overflow: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  order: 0;
+  flex-wrap: nowrap;
 }
-nav ul li a:hover {
-  color: blue;
-}
+
 nav ul li a {
   color: mintcream;
   text-decoration: none;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+/*Nav bar hover*/
+.dropdown-content a:hover {
+  background-color: gray;
 }
+
+.dropbtn:hover {
+  background-color: gray;
+}
+
+/*Dropdown Nav*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: black;
+}
+
+.dropdown-content a {
+  color: whitesmoke;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  background-color: darkgreen;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  height: max-content; 
+  width:fit-content;
+  height: 30px;
+}
+
 /*Picture nav bar on index*/
 .pic-ref,
 nav ul li {
   list-style: none;
 }
+
 .pic-ref li a {
   color: mediumseagreen;
   text-decoration: none;
@@ -107,13 +165,18 @@ header {
   outline-offset: -10px;
 }
 
+.Img-s:hover {
+  opacity: 0.5;
+}
+
+
 /*Main images on INDEX*/
 .picRefTitle {
-    font-size: x-large;
-    height: fit-content;
-    color: darkcyan;
-    margin-top: 20px;
-    justify-content: center;
+  font-size: x-large;
+  height: fit-content;
+  color: darkcyan;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 .Img-main {
@@ -123,7 +186,7 @@ header {
   border-top-left-radius: 25%;
   border-bottom-right-radius: 25%;
   float: right;
-  
+
 }
 
 /*Index flex box*/
@@ -136,8 +199,8 @@ header {
   justify-content: center;
   font-size: medium;
   outline: 6px solid mediumaquamarine;
-border-radius: 3%;
-overflow: auto;
+  border-radius: 3%;
+  overflow: auto;
 }
 
 .flexIndex {
@@ -145,6 +208,7 @@ overflow: auto;
   flex-direction: column;
   justify-content: space-around;
 }
+
 .pic-ref {
   display: flex;
   order: 0;
@@ -160,6 +224,7 @@ overflow: auto;
   display: flex;
   flex-direction: row;
 }
+
 .plantFlexItem {
   display: flex;
   margin-top: 15px;
@@ -168,12 +233,14 @@ overflow: auto;
   width: 45%;
   font-size: medium;
 }
+
 .plantFlexImg {
   display: flex;
   float: left;
   height: auto;
   width: 45%;
 }
+
 .Sub-tl {
   color: green;
   font-size: x-large;
@@ -181,4 +248,3 @@ overflow: auto;
   text-decoration: underline;
   margin-bottom: 5px;
 }
-
