@@ -24,7 +24,6 @@
 
 
 
-
 /*Title*/
 
 .Title {
@@ -67,6 +66,10 @@ h2 {
 footer{
   background-color: var(--main-darkgreen-colour);
   height: 30px;
+  font-size: xx-large;
+  text-align: center;
+  color: mintcream;
+  width: 100%;
 }
 
 /*Nav bar Dont touch it*/
@@ -75,14 +78,14 @@ footer{
   height: 30px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 1000px;
   text-align: center;
   overflow: none;
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   order: 0;
   flex-wrap: nowrap;
 }
@@ -91,6 +94,12 @@ nav ul li a {
   color: mintcream;
   text-decoration: none;
 }
+
+.frontPage {
+ padding-top: 6px; 
+}
+
+
 
 /*Nav bar hover*/
 .dropdown-content a:hover {
@@ -131,12 +140,10 @@ nav ul li a {
 .dropbtn {
   background-color: var(--main-darkgreen-colour);
   color: white;
-  padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
-  text-decoration: none;
-  height: max-content; 
+  text-decoration: none; 
   width:fit-content;
   height: 30px;
 }
