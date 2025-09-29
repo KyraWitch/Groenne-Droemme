@@ -13,15 +13,16 @@
   font-style: normal;
 }
 
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css);
+
 /*Colour variables*/
 
 :root {
   --body-colour: darkslategray;
   --main-darkgreen-colour: darkgreen;
   --dropdown-hover: gray;
+  --PicTitle-back-colour: rgb(124, 177, 121);
 }
-
-
 
 
 /*Title*/
@@ -49,7 +50,7 @@ body {
   width: 1000px;
 }
 
-.h1/h2 {
+.h1-h2 {
   color: var(--main-darkgreen-colour);
   text-shadow: -2px;
   filter: blur(radius) 2px silver;
@@ -70,6 +71,14 @@ footer{
   text-align: center;
   color: mintcream;
   width: 100%;
+}
+
+/*Email link*/
+h1 a {
+  color: var(--main-darkgreen-colour);
+}
+h1 a:visited {
+  color: var(--body-colour);
 }
 
 /*Nav bar Dont touch it*/
@@ -190,12 +199,38 @@ header {
 
 
 /*Main images on INDEX*/
+
+.picRefTitle-con {
+  background-color: var(--PicTitle-back-colour);
+  border-radius: 15px;
+  width: 80%;
+  margin-left: 100px;
+  padding: 2px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bold-xm {
+  font-weight: bold;
+  font-size: xx-large;
+  color: mintcream;
+  text-shadow: 1px 1px 2px whitesmoke;
+  display: flex;
+  margin-top: 4px;
+}
+
 .picRefTitle {
   font-size: x-large;
   height: fit-content;
-  color: darkcyan;
-  margin-top: 20px;
-  justify-content: center;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: font-awesome;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 10px;
+  display: flex;
 }
 
 .Img-main {
