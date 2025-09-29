@@ -22,6 +22,8 @@
   --main-darkgreen-colour: darkgreen;
   --dropdown-hover: gray;
   --PicTitle-back-colour: rgb(124, 177, 121);
+  --input-Background: #f2f2f2;
+  --KontaktUs-text: gray;
 }
 
 
@@ -302,3 +304,106 @@ header {
   text-decoration: underline;
   margin-bottom: 5px;
 }
+
+
+
+/*Kontakt us page*/
+/*
+Kontakt us Header
+Navn text input
+Email text input
+Nyplante til data base check box
+Plant name text input
+plant variant text input
+plant type text input
+plant height number input
+plant rækkeafstand number input
+plant sådybde number input
+plant lysforhold dropdown
+planten forspires i multiple choice
+plant udplantes i multiple choice
+planten spirer i number input
+planten er klar til høst i number input
+plant description text area
+submit button
+*/
+.flex-kontaktUs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.flex-txt-KontaktUs {
+  display: flex;
+  float: left;
+}
+
+.Flex-input-KontaktUs {
+  display: flex;
+  float: right;
+  flex-direction: column;
+  order: 0;
+}
+
+
+.text-KontaktUs {
+text-decoration: none;
+color: var(--KontaktUs-text);
+}
+
+.input-border-shadow {
+  border: #000000 solid 1px;
+  border-radius: 2px;
+  margin: 3px;
+  text-size-adjust: auto;
+  background-color: var(--input-Background);
+}
+
+.text-Input {
+text-align: left;
+width: 300px;
+}
+
+.number-input {
+  width: 50px;
+}
+
+.multiple-choice {
+  width: 200px;
+  height: fit-content;
+  overflow: auto;
+}
+
+/*Dropdown choice*/
+/*Remember to add drop down class to parent and other drop down stuff to the right things aka reuse nav to keep it DRY*/
+
+.dropdown-choice-option {
+background-color: white;
+border: 1px solid gray;
+}
+
+.dropdown-choice-option:hover {
+  background-color: var(--dropdown-hover);
+  cursor: pointer;
+}
+
+.big-text-input {
+  width: 300px;
+  height: 150px;
+  overflow: auto;
+}
+
+.submit-btn {
+color: black;
+font-weight: 700;
+text-decoration-style: solid 2px;
+}
+.submit-btn:hover {
+  color: var(--dropdown-hover);
+  cursor: pointer;
+}
+
+
+
+
