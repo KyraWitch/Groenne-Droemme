@@ -40,7 +40,7 @@
 /*global styles*/
 
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -49,6 +49,8 @@
 
 body {
   color: var(--body-colour);
+}
+Main {
   width: 1000px;
 }
 
@@ -89,7 +91,7 @@ h1 a:visited {
   height: 30px;
   position: fixed;
   top: 0;
-  width: 1000px;
+  width: 100%;
   text-align: center;
   overflow: none;
   padding-left: 1rem;
@@ -99,6 +101,7 @@ h1 a:visited {
   justify-content: space-evenly;
   order: 0;
   flex-wrap: nowrap;
+  margin: 0;
 }
 
 nav ul li a {
@@ -107,7 +110,7 @@ nav ul li a {
 }
 
 .frontPage {
- padding-top: 6px; 
+
 }
 
 
