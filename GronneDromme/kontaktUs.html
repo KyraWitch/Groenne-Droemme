@@ -11,139 +11,134 @@
 <body>
 
     </header>
-    
-        <br>
-        <header class="Title">
-            <!--kontakt us-->
-        </header>
-        <nav class="Nav-div">
-            <!--Home button-->
-            <ul>
-                <li class="frontPage">
-                    <a href="./Index.html">Forside</a>
-                </li>
 
-            </ul>
+    <br>
+    <header class="Title">
+        <!--kontakt us-->
+    </header>
+    <nav class="Nav-div">
+        <!--Home button-->
+        <ul>
+            <li class="frontPage">
+                <a href="./Index.html">Forside</a>
+            </li>
 
-            <!--Dropdown Catogories-->
-            <!--Vegetable drop down-->
-            <ul class="dropdown">
-                <li>
-                    <button class="dropbtn"> <a href="#">Krydderurter</a></button>
-                    <div class="dropdown-content">
-                        <a href="./basilikum.html">Basilikum</a>
-                    </div>
-                </li>
-            </ul>
+        </ul>
 
-            <!--Spice drop down-->
-            <ul class="dropdown">
-                <li>
-                    <button class="dropbtn"><a href="#">Grøntsager</a></button>
-                    <div class="dropdown-content">
-                        <a href="./aertalderman.html">Ært</a>
-                        <a href="./boennebluelake.html">Bønne</a>
-                    </div>
-                </li>
-            </ul>
-            <ul>
-                <li class="frontPage">
-                    <a href="kontaktUs.html">Kontakt us</a>
-                </li>
-            </ul>
-        </nav>
+        <!--Dropdown Catogories-->
+        <!--Vegetable drop down-->
+        <ul class="dropdown">
+            <li>
+                <button class="dropbtn"> <a href="#">Krydderurter</a></button>
+                <div class="dropdown-content">
+                    <a href="./basilikum.html">Basilikum</a>
+                </div>
+            </li>
+        </ul>
 
-<Main class="flexIndex">
+        <!--Spice drop down-->
+        <ul class="dropdown">
+            <li>
+                <button class="dropbtn"><a href="#">Grøntsager</a></button>
+                <div class="dropdown-content">
+                    <a href="./aertalderman.html">Ært</a>
+                    <a href="./boennebluelake.html">Bønne</a>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li class="frontPage">
+                <a href="kontaktUs.html">Kontakt us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <Main class="flexIndex">
         <!--Kontakt us Text-->
-        <Div class="flex-kontaktUs">
-            <div class="flex-txt-KontaktUs">
-                <p class=".text-KontaktUs">
-                    Navn: <br><br>
-                    Email: <br><br>
-                    Besked: <br><br>
-                    <br><br><br><br><br>
-                    Ny plante til data basen: <input type="checkbox" name="" id=""> <br>
-                    Plantens danskenavn: <br><br>
-                    Plantens variant: <br><br>
-                    Plantens botanske navn: <br><br>
-                    Plantens Type: <br><br>
-                    Plantens højde: <br><br>
-                    Plantens Rækkeafstand: <br><br>
-                    Plantens Sådybde: <br><br>
-                    Plantens Lysforhold: <br><br>
-                    Plantens Forspiring: <br><br>
-                    Plantens Udplantning: <br><br>
-                    Planten spirer efter ca: <br><br>
-                    Planten er klar til høst efter ca: <br><br>
-                    Plantbeskrivelse: <br><br>
-                </p>
+        <form>
+            <div class="form-group">
+                <label for="Navn">Navn:</label>
+                <input class="input-border-shadow" type="text" id="Navn" name="Navn">
             </div>
-            <!--Kontakt us Text inputs-->
-            <Div class="Flex-input-KontaktUs">
-                <p>
-                    <input class="text-Input input-border-shadow" type="text"> <br>
-                </p>
-                <p>
-                    <input class="text-Input input-border-shadow" type="email" name="" id=""><br>
-                </p>
+            <div class="form-group">
+                <label for="email">Email Adresse:</label>
+                <input class="input-border-shadow" type="email" id="email" name="email">
+            </div>
 
-                <p>
-                    <textarea class="big-text-input text-Input input-border-shadow" name="" id=""></textarea><br>
-                </p>
-                <br>
+            <div class="form-group">
+                <label style="margin: 0;" for="besked">Besked: </label>
+                <textarea class="input-border-shadow" id="besked" name="besked"
+                    placeholder="Write your message here"></textarea>
+            </div>
 
-                <br><br>
-                <p>
-                    <input class="text-Input input-border-shadow" type="text"><br>
-                </p>
-                
-                <p>
-                    <input class="text-Input input-border-shadow" type="text"><br>
-                </p>
-                
-                <p>
-                    <input class="text-Input input-border-shadow" type="text"><br>
-                </p>
-                <p>
-                    <input class="text-Input input-border-shadow" type="text"><br>
-                </p>
-                <p>
-                    <input class="number-input input-border-shadow" type="number" name="" id="">cm<br>
-                </p>
-                <p>
-                    <input class="number-input input-border-shadow" type="number" name="" id="">cm<br>
-                </p>
-                <p>
-                    <input class="number-input input-border-shadow" type="number" name="" id="">cm<br>
-                </p>
-                <p>
-                    <select class="text-Input input-border-shadow" name="" id=""></select><br>
-                </p>
-                <p>
-                    <select class="text-Input input-border-shadow" name="" id=""></select><br>
-                </p>
-                <p>
-                    <input class="number-input input-border-shadow" type="number" name="" id="">dage<br>
-                </p>
-                <p>
-                    <input class="number-input input-border-shadow" type="number" name="" id="">dage<br>
-                </p>
-                <p>
-                    <textarea class="big-text-input text-Input input-border-shadow" name="" id=""></textarea><br>
-                </p>
-                <button class=".submit-button">
+            <div class="form-group">
+                <label for="nyPlante">Ny plante til data basen:
+                    <input class="input-border-shadow checkbox-group" type="checkbox" id="nyPlante" name="nyPlante">
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="danskeNavn">Plantens danskenavn:</label>
+                <input class="input-border-shadow" type="text" id="danskeNavn" name="danskeNavn">
+            </div>
+            <div class="form-group">
+                <label for="variant">Plantens variant:</label>
+                <input class="input-border-shadow" type="text" id="variant" name="variant">
+            </div>
+            <div class="form-group">
+                <label for="botaniskNavn">Plantens botanske navn:</label>
+                <input class="input-border-shadow" type="text" id="botaniskNavn" name="botaniskNavn">
+            </div>
+            <div class="form-group">
+                <label for="type">Plantens Type:</label>
+                <input class="input-border-shadow" type="text" id="type" name="type">
+            </div>
+            <div class="form-group">
+                <label for="hojde">Plantens højde:</label>
+                <input class="input-border-shadow" type="number" id="hojde" name="hojde">
+            </div>
+            <div class="form-group">
+                <label for="raekkeafstand">Plantens Rækkeafstand:</label>
+                <input class="input-border-shadow numbersizing" type="number" id="raekkeafstand" name="raekkeafstand">
+            </div>
+            <div class="form-group">
+                <label for="saadybde">Plantens Sådybde:</label>
+                <input class="input-border-shadow numbersizing" type="number" id="saadybde" name="saadybde">
+            </div>
+            <div class="form-group">
+                <label for="lysforhold">Plantens Lysforhold:</label>
+                <!-- Do ina bit but drop down -->
+            </div>
+            <div class="form-group">
+                <label for="forspiring">Plantens Forspiring:</label>
+                <select class="input-border-shadow" id="forspiring" name="forspiring"></select>
+            </div>
+            <div class="form-group">
+                <label for="udplantning">Plantens Udplantning:</label>
+                <select class="input-border-shadow" id="udplantning" name="udplantning"></select>
+            </div>
+            <div class="form-group">
+                <label for="spirerEfter">Planten spirer efter ca:</label>
+                <input class="input-border-shadow numbersizing" type="number" id="spirerEfter" name="spirerEfter">
+            </div>
+            <div class="form-group">
+                <label for="klarTilHoest">Planten er klar til høst efter ca:</label>
+                <input class="input-border-shadow numbersizing" type="number" id="klarTilHoest" name="klarTilHoest">
+            </div>
+            <div class="form-group">
+                <label for="beskrivelse">Plantbeskrivelse:</label>
+                <textarea class="input-border-shadow" id="beskrivelse" name="beskrivelse"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="submit-btn" type="submit">
                     Indsend
                 </button>
+            </div>
+        </form>
+    </main>
 
-            </Div>
-
-        </Div>
-
-</main>
-
- <Footer>
-            <p>© Grønne Drømme 2023</p>
-        </Footer>
+    <Footer>
+        <p>© Grønne Drømme 2023</p>
+    </Footer>
 
 
 

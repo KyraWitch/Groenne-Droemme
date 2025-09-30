@@ -40,7 +40,7 @@
 /*global styles*/
 
 * {
-  margin: auto;
+  margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -50,8 +50,10 @@
 body {
   color: var(--body-colour);
 }
+
 Main {
   width: 1000px;
+  justify-self: center;
 }
 
 .h1-h2 {
@@ -68,19 +70,22 @@ h2 {
   font-size: 2rem;
 }
 
-footer{
+footer {
   background-color: var(--main-darkgreen-colour);
   height: 30px;
   font-size: xx-large;
   text-align: center;
   color: mintcream;
   width: 100%;
+  position: fixed;
+  bottom: 0%;
 }
 
 /*Email link*/
 h1 a {
   color: var(--main-darkgreen-colour);
 }
+
 h1 a:visited {
   color: var(--body-colour);
 }
@@ -101,6 +106,8 @@ h1 a:visited {
   justify-content: space-evenly;
   order: 0;
   flex-wrap: nowrap;
+  margin: 0;
+  align-items: center;
 }
 
 nav ul li a {
@@ -108,15 +115,11 @@ nav ul li a {
   text-decoration: none;
 }
 
-.frontPage {
-
-}
-
 
 
 /*Nav bar hover*/
 .dropdown-content a:hover {
-  background-color:  var(--dropdown-hover);
+  background-color: var(--dropdown-hover);
 
 }
 
@@ -156,8 +159,8 @@ nav ul li a {
   font-size: 16px;
   border: none;
   cursor: pointer;
-  text-decoration: none; 
-  width:fit-content;
+  text-decoration: none;
+  width: fit-content;
   height: 30px;
 }
 
@@ -329,30 +332,52 @@ planten er klar til høst i number input
 plant description text area
 submit button
 */
-.flex-kontaktUs {
+
+.form-group {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
+   flex-direction: row;
+  justify-content: flex-end;
 }
 
-.flex-txt-KontaktUs {
-  display: flex;
-  float: left;
+.form-group label {
+  width: 200px;
+  /* Fixed width for consistent alignment */
+  text-align: right;
+  margin-right: 150px;
+  /* Space between label and input */
+  font-family: font awesome;
 }
 
-.Flex-input-KontaktUs {
-  display: flex;
-  float: right;
-  flex-direction: column;
-  order: 0;
+.form-group input {
+  width: 300px;
+  flex: 1;
+  padding: 5px;
+}
+
+.form-group textarea {
+  flex: 1;
+  padding: 5px;
+  resize: none;
+  width: 300px;
+  height: 100px;
+}
+
+.form-group select {
+  flex: 1;
+  padding: 5px;
+  width: 300px;
+}
+
+.numbersizing {
+  max-width: 50px; 
+}
+
+.checkbox-group {
+  margin-right: 0px;
+  /* Align with other inputs */
 }
 
 
-.text-KontaktUs {
-text-decoration: none;
-color: var(--KontaktUs-text);
-}
 
 .input-border-shadow {
   border: #000000 solid 1px;
@@ -362,27 +387,12 @@ color: var(--KontaktUs-text);
   background-color: var(--input-Background);
 }
 
-.text-Input {
-text-align: left;
-width: 300px;
-}
-
-.number-input {
-  width: 50px;
-}
-
-.multiple-choice {
-  width: 200px;
-  height: fit-content;
-  overflow: auto;
-}
-
 /*Dropdown choice*/
 /*Remember to add drop down class to parent and other drop down stuff to the right things aka reuse nav to keep it DRY*/
 
 .dropdown-choice-option {
-background-color: white;
-border: 1px solid gray;
+  background-color: white;
+  border: 1px solid gray;
 }
 
 .dropdown-choice-option:hover {
@@ -396,16 +406,15 @@ border: 1px solid gray;
   overflow: auto;
 }
 
+
+/*Submit button*/
 .submit-btn {
-color: black;
-font-weight: 700;
-text-decoration-style: solid 2px;
+  color: black;
+  font-weight: 700;
+  text-decoration-style: solid 2px;
 }
+
 .submit-btn:hover {
   color: var(--dropdown-hover);
   cursor: pointer;
 }
-
-
-
-
