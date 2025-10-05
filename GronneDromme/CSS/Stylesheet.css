@@ -73,12 +73,10 @@ h2 {
 footer {
   background-color: var(--main-darkgreen-colour);
   height: 30px;
-  font-size: xx-large;
+  font-size: x-large;
   text-align: center;
   color: mintcream;
   width: 100%;
-  position: fixed;
-  bottom: 0%;
 }
 
 /*Email link*/
@@ -176,12 +174,7 @@ nav ul li {
   display: inline;
 }
 
-/*Footer & Header possibly no change needed*/
-
-footer {
-  background-color: var(--main-darkgreen-colour);
-  max-height: 30px;
-}
+/*Header possibly no change needed*/
 
 header {
   text-align: center;
@@ -283,24 +276,33 @@ header {
 
 .flexPlantPages {
   display: flex;
-  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 1000px;
+  justify-self: center;
 }
 
+
 .plantFlexItem {
-  display: flex;
-  margin-top: 15px;
-  float: right;
-  height: auto;
-  width: 45%;
-  font-size: medium;
+  flex: 50%;
+  padding: 20px;
+}
+
+.plantFlexItem p {
+  padding-top: 40px;
 }
 
 .plantFlexImg {
-  display: flex;
-  float: left;
-  height: auto;
-  width: 45%;
+  flex: 50%;
 }
+
+.plantFlexImg img{
+  width: 100%;
+  padding: 20px;
+}
+.plantFlexImg p{
+  padding-left: 20px;
+}
+
 
 .Sub-tl {
   color: green;
@@ -343,18 +345,24 @@ form {
    flex-direction: row;
 }
 
+.form-group p {
+  font-family: font awesome;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
 .form-group label {
   width: 200px;
   /* Fixed width for consistent alignment */
   margin-right: 150px;
   /* Space between label and input */
   font-family: font awesome;
+  padding-top: 5px;
 }
 
 .form-group input {
   width: 300px;
   padding: 5px;
-
 }
 
 .form-group textarea {
@@ -364,20 +372,44 @@ form {
   height: 100px;
 }
 
-.form-group select {
+.single-select{
   padding: 5px;
   width: 300px;
+}
+
+.multiple-select {
+  padding: 5px;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
 }
 
 .numbersizing {
   max-width: 50px; 
 }
 
-.checkbox-group {
-  margin-right: 0px;
-  /* Align with other inputs */
+.check {
+  width: 20px
 }
 
+.hidden-text {
+   display: none;
+}
+
+
+#toggle:checked ~ .hidden-text {
+  display: block;
+}
+
+
+
+
+.form-group input:focus {
+background-color: white;
+}
+.form-group textarea:focus {
+  background-color: white;
+}
 
 
 .input-border-shadow {

@@ -72,10 +72,10 @@
             </div>
 
             <div class="form-group">
-                <label for="nyPlante">Ny plante til data basen:
-                    <input class="input-border-shadow checkbox-group" type="checkbox" id="nyPlante" name="nyPlante">
-                </label>
+               <label for="toggle">Ny plante til data basen?: </label>
             </div>
+            <input class="input-border-shadow check" type="checkbox" id="toggle">
+<div class="hidden-text">
             <div class="form-group">
                 <label for="danskeNavn">Plantens danskenavn:</label>
                 <input class="input-border-shadow" type="text" id="danskeNavn" name="danskeNavn">
@@ -94,45 +94,78 @@
             </div>
             <div class="form-group">
                 <label for="hojde">Plantens højde:</label>
-                <input class="input-border-shadow" type="number" id="hojde" name="hojde">
+                <input class="input-border-shadow numbersizing" type="number" id="hojde" name="hojde">
+                <p>cm</p>
             </div>
             <div class="form-group">
                 <label for="raekkeafstand">Plantens Rækkeafstand:</label>
                 <input class="input-border-shadow numbersizing" type="number" id="raekkeafstand" name="raekkeafstand">
+                <p>cm</p>
             </div>
             <div class="form-group">
                 <label for="saadybde">Plantens Sådybde:</label>
                 <input class="input-border-shadow numbersizing" type="number" id="saadybde" name="saadybde">
+                <p>cm</p>
             </div>
             <div class="form-group">
                 <label for="lysforhold">Plantens Lysforhold:</label>
+                <select class="input-border-shadow single-select" name="Lysforhold" id="Lysforhold">
+                    <option value="Fuld sol">Fuld Sol</option>
+                    <option value="Delvis skygge">Delvis skygge</option>
+                    <option value="Halvskygge">Halvskygge</option>
+                    <option value="Skygge">Skygge</option>
+                </select>
                 <!-- Do ina bit but drop down -->
             </div>
             <div class="form-group">
                 <label for="forspiring">Plantens Forspiring:</label>
-                <select class="input-border-shadow" id="forspiring" name="forspiring"></select>
+                <select class="input-border-shadow multiple-select" id="forspiring" name="forspiring" multiple>
+                    <option value="January">Januar</option>
+                    <option value="February">Februar</option>
+                    <option value="March">Marts</option>
+                    <option value="April">April</option>
+                    <option value="May">Maj</option>
+                    <option value="June">Juni</option>
+                    <option value="July">Juli</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">Oktober</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="udplantning">Plantens Udplantning:</label>
-                <select class="input-border-shadow" id="udplantning" name="udplantning" multiple>
-                    <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="opel">Opel</option>
-  <option value="audi">Audi</option>
+                <select class="input-border-shadow multiple-select" id="udplantning" name="udplantning" multiple>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="spirerEfter">Planten spirer efter ca:</label>
-                <input class="input-border-shadow numbersizing" type="number" id="spirerEfter" name="spirerEfter">
+                <input class="input-border-shadow numbersizing" type="number" id="spirerEfter" name="spirerEfter" >
+                <p>Dage</p>
             </div>
             <div class="form-group">
                 <label for="klarTilHoest">Planten er klar til høst efter ca:</label>
                 <input class="input-border-shadow numbersizing" type="number" id="klarTilHoest" name="klarTilHoest">
+                <p>Dage</p>
             </div>
             <div class="form-group">
                 <label for="beskrivelse">Plantbeskrivelse:</label>
                 <textarea class="input-border-shadow" id="beskrivelse" name="beskrivelse"></textarea>
             </div>
+        </div>
             <div class="form-group">
                 <button class="submit-btn" type="submit">
                     Indsend
@@ -140,17 +173,9 @@
             </div>
         </form>
     </main>
-
+    <br>
     <Footer>
         <p>© Grønne Drømme 2023</p>
     </Footer>
-
-
-
-
-
-
-
 </body>
-
 </html>
