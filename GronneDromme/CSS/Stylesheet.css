@@ -267,7 +267,7 @@ header {
 .flexIndex {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-around; 
 }
 
 .pic-ref {
@@ -333,16 +333,19 @@ plant description text area
 submit button
 */
 
+form {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
 .form-group {
   display: flex;
    flex-direction: row;
-  justify-content: flex-end;
 }
 
 .form-group label {
   width: 200px;
   /* Fixed width for consistent alignment */
-  text-align: right;
   margin-right: 150px;
   /* Space between label and input */
   font-family: font awesome;
@@ -350,12 +353,11 @@ submit button
 
 .form-group input {
   width: 300px;
-  flex: 1;
   padding: 5px;
+
 }
 
 .form-group textarea {
-  flex: 1;
   padding: 5px;
   resize: none;
   width: 300px;
@@ -363,7 +365,6 @@ submit button
 }
 
 .form-group select {
-  flex: 1;
   padding: 5px;
   width: 300px;
 }
