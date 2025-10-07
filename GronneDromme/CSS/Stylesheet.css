@@ -41,7 +41,9 @@
   }
   .flexPlantPages {
     width: 98%;
+    flex-direction: column;
   }
+  
 }
 
 
